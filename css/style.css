@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+ 
 html {
     scroll-behavior: smooth;
 }
@@ -19,9 +19,10 @@ body {
 }
 
 .container {
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 1.5rem;
+    width: 100%;
 }
 
 /************** Header Section Starts ************/
@@ -43,8 +44,13 @@ body {
 .header .main-navigation .container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 0 1rem;
+    gap: 2rem;
+}
+
+.header .logo{
+    flex-shrink: 0;
 }
 
 .header .logo img {
@@ -81,13 +87,19 @@ body {
 
 .header .primary-nav {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    gap: 2rem;
 }
 
 .header .nav-menu {
     display: flex;
-    list-style: none;
-    gap: 3.5rem;
     align-items: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .header .nav-item {
@@ -97,8 +109,9 @@ body {
 .header .nav-link {
     color: white;
     text-decoration: none;
+    font-size: 18px;
     font-weight: 500;
-    padding: 0.75rem 0;
+    padding: 0.75rem;
     transition: color 0.3s ease;
 }
 
@@ -106,10 +119,17 @@ body {
     color: #0C7BC0;
 }
 
-.header .social-media-icons-menu__inner {
-    padding: 13px 1rem;
+.header .social-media-icons{
     display: flex;
+    align-items: center;
     gap: 1rem;
+    margin-left: auto;
+}
+
+.header .social-media-icons-menu__inner {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0;
 }
 
 .header .social-media-icons .social-link {
@@ -123,6 +143,7 @@ body {
     text-decoration: none;
     transition: all 0.3s ease;
     padding: 15px;
+    margin: 8px;
 }
 
 .header .social-media-icons .social-link i{
@@ -183,7 +204,10 @@ body {
     }
 
     .header .primary-nav.active .social-media-icons {
-        display: block;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 1rem;
     }
 
     .header .social-media-icons-menu__inner {
