@@ -42,7 +42,7 @@
   line-height: 1.6;
 }
 
-.learn-more-btn {
+/* .learn-more-btn {
   display: inline-block;
   margin-top: 10px;
   background-color: #f90;
@@ -55,7 +55,7 @@
 
 .learn-more-btn:hover {
   background-color: #e57706;
-}
+} */
 
 /* More products */
 .product-list-section {

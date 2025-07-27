@@ -42,21 +42,6 @@
   line-height: 1.6;
 }
 
-.learn-more-btn {
-  display: inline-block;
-  margin-top: 10px;
-  background-color: #f90;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.learn-more-btn:hover {
-  background-color: #e57706;
-}
-
 /* More content */
 .benefits-section {
   position: relative;
@@ -181,4 +166,9 @@
   font-size: 0.95rem;
   color: #444;
   line-height: 1.6;
+}
+
+.footer{
+  position: relative;
+  top: 30px;
 }

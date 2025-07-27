@@ -65,11 +65,11 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.card h3 {
+/* .card h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
   color: #1e3a8a;
-}
+} */
 
 .card p {
   font-size: 1rem;
@@ -82,15 +82,10 @@
   object-fit: cover;
 }
 
-
-
-
-
 /* Footer */
 .footer {
-    position: relative;
-    top: 87px;
-    background: #1B365D;
-    color: white;
-    /* border: 5px solid red; */
+  position: relative;
+  top: 87px;
+  background: #1B365D;
+  color: white;
 }

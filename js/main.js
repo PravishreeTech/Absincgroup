@@ -1,9 +1,9 @@
 ////// NAVBAR RESPONSIVE ///////////
-const toggle = document.getElementById('mobile-menu-toggle');
+const toggleBtn = document.getElementById('mobile-menu-toggle');
 const nav = document.querySelector('.primary-nav');
 
-toggle.addEventListener('click', () => {
-    toggle.classList.toggle('active');
+toggleBtn.addEventListener('click', () => {
+    toggleBtn.classList.toggle('active');
     nav.classList.toggle('active');
 });
 

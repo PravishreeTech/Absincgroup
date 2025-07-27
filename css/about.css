@@ -1,4 +1,40 @@
-/* Other section */
+/********** Description Starts **********/
+.content-section {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 86px;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 100px;
+  flex-wrap: wrap; /* makes it responsive */
+}
+
+.text-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.head{
+  color: #1B365D;
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+
+.image-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.image-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/********** Description Ends **********/
+
+/********** Other section Start **********/
 .info-section {
   position: relative;
   top: 87px;
@@ -29,13 +65,10 @@
   margin-bottom: 15px;
   font-size: 16px;
 }
+/********** Other section Ends **********/
 
-
-/* Footer */
+/********** Footer **********/
 .footer {
     position: relative;
     top: 87px;
-    background: #1B365D;
-    color: white;
-    /* border: 5px solid red; */
 }

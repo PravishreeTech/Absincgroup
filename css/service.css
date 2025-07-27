@@ -22,39 +22,6 @@
   line-height: 1.6;
 }
 
-.expertise-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-  padding: 0 20px;
-}
-
-.expertise-card {
-  background-color: white;
-  padding: 25px 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-  text-align: left;
-}
-
-.expertise-card:hover {
-  transform: translateY(-6px);
-}
-
-.expertise-card h3 {
-  font-size: 1.2rem;
-  color: #0077b6;
-  margin-bottom: 10px;
-}
-
-.expertise-card p {
-  font-size: 0.95rem;
-  color: #333;
-  line-height: 1.5;
-}
-
-
 /* First Service */
 .expertise-section {
   position: relative;
@@ -110,7 +77,6 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-
 /* Other services */
 .flip-card-section {
   position: relative;
@@ -121,16 +87,11 @@
 }
 
 .flip-card-container {
-  /* position: relative;
-  top: 47px;
-  display: flex;
-  justify-content: center; */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 60px;
   margin-top: 40px;
-  /* align-items: center; */
 }
 
 .flip-card {
@@ -196,14 +157,10 @@
   }
 }
 
-
 /* Footer */
 .footer {
     position: relative;
     top: 177px;
-    background: #1B365D;
-    color: white;
-    /* border: 5px solid red; */
 }
 
 @media screen and (max-width: 500px) {
