@@ -14,57 +14,83 @@ const isMobile = () => window.innerWidth <= 768;
 
 // Content for each section
 const contentData = {
-  content1: [
-    "INDs, NDAs, ANDAs, BLAs, eCTDs, and global submission strategies",
-    "FDA 505(b)(2) and biosimilar pathways",
-    "Regulatory writing, data integrity audits, and submission review",
-    "Pre-IND & Type B/C Meeting prep and agency interactions",
-    "eCTD compilation and lifecycle management",
-    "Third-party audits for FDA, EMA, WHO compliance",
-  ],
-  content2: [
-    "cGMP audits, remediation, and quality systems implementation",
-    "Aseptic manufacturing consulting and facility readiness",
-    "QA/QC oversight, SOP writing, and training",
-    "Process & cleaning validations",
-    "Mock inspections and 483/NOD response support",
-    "Risk-based approach to QMS development",
-  ],
-  content3: [
-    "Analytical method validation and transfer",
-    "Bioassay and potency testing for biologics and biosimilars",
-    "Technology transfer support (domestic and international)",
-    "Product comparability, stability, and impurity strategy",
-    "End-to-end CMC support across preclinical to commercial phases",
-  ],
+    content1: [
+        "INDs, NDAs, ANDAs, BLAs, eCTDs, and global submission strategies",
+        "FDA 505(b)(2) and biosimilar pathways",
+        "Regulatory writing, data integrity audits, and submission review",
+        "Pre-IND & Type B/C Meeting prep and agency interactions",
+        "eCTD compilation and lifecycle management",
+        "Third-party audits for FDA, EMA, WHO compliance",
+    ],
+    content2: [
+        "cGMP audits, remediation, and quality systems implementation",
+        "Aseptic manufacturing consulting and facility readiness",
+        "QA/QC oversight, SOP writing, and training",
+        "Process & cleaning validations",
+        "Mock inspections and 483/NOD response support",
+        "Risk-based approach to QMS development",
+    ],
+    content3: [
+        "Analytical method validation and transfer",
+        "Bioassay and potency testing for biologics and biosimilars",
+        "Technology transfer support (domestic and international)",
+        "Product comparability, stability, and impurity strategy",
+        "End-to-end CMC support across preclinical to commercial phases",
+    ],
 };
 
 buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const targetId = button.getAttribute("data-target");
-    const points = contentData[targetId];
-    const mobileBox = document.getElementById(targetId);
+    button.addEventListener("click", () => {
+        const targetId = button.getAttribute("data-target");
+        const points = contentData[targetId];
+        const mobileBox = document.getElementById(targetId);
 
-    if (isMobile()) {
-      // Toggle for mobile
-      if (mobileBox.classList.contains("active")) {
-        mobileBox.classList.remove("active");
-        mobileBox.innerHTML = "";
-      } else {
-        document.querySelectorAll(".mobile-content").forEach((mc) => {
-          mc.classList.remove("active");
-          mc.innerHTML = "";
-        });
-        mobileBox.classList.add("active");
-        mobileBox.innerHTML = `<ul>${points.map(item => `<li> ${item}</li>`).join("")}</ul>`;
-      }
-    } else {
-      // Desktop: Show content on right panel
-      desktopContent.innerHTML = `<ul>${points.map(item => `<li> ${item}</li>`).join("")}</ul>`;
-    }
-  });
+        if (isMobile()) {
+            // Toggle for mobile
+            if (mobileBox.classList.contains("active")) {
+                mobileBox.classList.remove("active");
+                mobileBox.innerHTML = "";
+            } else {
+                document.querySelectorAll(".mobile-content").forEach((mc) => {
+                    mc.classList.remove("active");
+                    mc.innerHTML = "";
+                });
+                mobileBox.classList.add("active");
+                mobileBox.innerHTML = `<ul>${points.map(item => `<li> ${item}</li>`).join("")}</ul>`;
+            }
+        } else {
+            // Desktop: Show content on right panel
+            desktopContent.innerHTML = `<ul>${points.map(item => `<li> ${item}</li>`).join("")}</ul>`;
+        }
+    });
 });
 
+////// JOBS PAGE APPLICATION FORM ///////
+// const applyBtn = document.querySelector('#applyNowBtn'); // Add id to your Apply Now button
+const modal = document.getElementById('applicationModal');
+const closeBtn = document.querySelector('.close-btn');
+
+// Get all apply now buttons
+const applyBtns = document.querySelectorAll(".apply-now");
+
+// Loop through and attach click event
+applyBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+        modal.style.display = "flex";
+    });
+});
+
+// Close modal
+closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+});
+
+// Click outside to close
+window.addEventListener("click", (e) => {
+    if (e.target == modal) {
+        modal.style.display = "none";
+    }
+});
 
 // Main JavaScript for Abs Inc Website
 document.addEventListener('DOMContentLoaded', function () {
