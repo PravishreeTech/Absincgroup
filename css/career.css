@@ -1,29 +1,283 @@
-/* Careers */
+/* Careers section Description */
 .careers-section {
+  display: flex;
+  align-items: center;
   position: relative;
-  top : 86px;
-  background: #f8fbfe;
+  top: 86px;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 100px;
+  flex-wrap: wrap; /* makes it responsive */
+}
+
+.careers-section .text-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.careers-section .head{
+  color: #1B365D;
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+
+.careers-section .image-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.careers-section .image-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Why Join Us Section */
+.why-join-us-section {
+  position: relative;
+  top: 86px;
   padding: 30px 20px;
-  text-align: center;
+  background: #fff;
   font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.careers-title {
-  font-size: 2.2rem;
-  color: #004a6e;
-  margin-bottom: 15px;
+.why-join-us-section h2{
+  padding: 10px;
+  font-size: 30px;
+  color: #1B365D;
 }
 
-.careers-intro {
-  font-size: 1.05rem;
-  color: #444;
+.why-join-us-section .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+.why-join-us-section .card {
+  background: transparent;
+  width: 320px;
+  height: 320px;
+  perspective: 1000px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.why-join-us-section .card-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.why-join-us-section .content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.why-join-us-section .content {
+  background-color: #fff;
+  color: #003366;
+}
+
+.why-join-us-section .content h3,
+.why-join-us-section .content p
+{
+  padding: 10px;
+  margin: 10px;
+}
+
+.why-join-us-section .content h3{
+  font-size: 20px;
+}
+
+.why-join-us-section .content p{
+  font-size: 18px;
+}
+
+@media screen and (max-width: 480px) {
+  .why-join-us-section .container{
+    gap: 100px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .why-join-us-section .card{
+    width: 90%;
+    max-width: 360px;
+  }
+}
+
+/* Hiring Roles Section */
+.hiring-section {
+  position: relative;
+  top: 86px;
+  padding: 30px 20px;
+  /* background: #fff; */
+  background: #1B365D;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hiring-section h2{
+  padding: 10px;
+  font-size: 30px;
+  /* color: #1B365D; */
+  color: #fff;
+}
+
+.hiring-section h4 {
+  font-size: 14px;
+  color: #d2d0d0;
   max-width: 800px;
-  margin: 0 auto 20px;
-  line-height: 1.6;
+  margin: 0 auto;
+}
+
+.hiring-section .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.hiring-section .card {
+  background: transparent;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.hiring-section .card-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.hiring-section .content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #fff;
+  color: #003366;
+  transition: transform 0.3s;
+}
+
+.hiring-section .content h3{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.hiring-section .content p{
+  font-size: 18px;
+}
+
+@media screen and (max-width: 992px) {
+  .hiring-section .card{
+    width: 45%;
+    height: 230px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hiring-section .card {
+    width: 100%;
+    max-width: 350px;
+    height: 220px;
+  }
+
+  .hiring-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .hiring-section h4 {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hiring-section .container{
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hiring-section .card{
+    width: 90%;
+    max-width: 300px;
+    height: 200px;
+  }
+}
+
+/********** Consulting Division Section**********/
+.consulting-section {
+  position: relative;
+  top: 87px;
+  background-color: #f8f9fa;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.8;
+}
+
+.consulting-section .content-block {
+  max-width: 1050px;
+  margin: 0 auto 50px auto;
+  padding: 30px;
+  background: #fff;
+  border-left: 5px solid #1B365D;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.consulting-section .content-block h2 {
+  color: #1B365D;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.consulting-section .content-block p {
+  margin-bottom: 15px;
+  font-size: 16px;
 }
 
 /* Footer */
 .footer {
     position: relative;
-    top: 140px;
+    top: 90px;
 }
