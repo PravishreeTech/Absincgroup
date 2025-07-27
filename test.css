@@ -1,0 +1,111 @@
+/* CSS Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Noto Sans', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+    /* Prevent accidental side scrolling */
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/*********** Testimonials Section Starts *************/
+.testimonial-section .carousel {
+    position: relative;
+    /* top: 172px; */
+    width: 100%;
+    background: #1B365D;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testimonial-section .testimonial {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity 0.5s ease-in-out;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 15px;
+
+    max-width: 1300px;
+    width: 100%;
+}
+
+.testimonial-section .testimonial.active {
+    display: flex;
+}
+
+.testimonial-section .testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.testimonial-section .testimonial p {
+    font-size: 15px;
+    color: #000;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.testimonial-section .testimonial .name {
+    font-weight: bold;
+    color: #000;
+    font-size: 30px;
+}
+
+.testimonial-section .testimonial .role {
+    font-size: 14px;
+    color: #555;
+}
+
+.testimonial-section .testimonial .quote {
+    color: #0056cc;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.testimonial-section .dots {
+    margin-top: 15px;
+}
+
+.testimonial-section .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.testimonial-section .dot.active {
+    background-color: #0056cc;
+}
+/*********** Testimonials Section Ends *************/

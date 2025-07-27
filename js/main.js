@@ -12,12 +12,41 @@ const buttons = document.querySelectorAll(".toggle-btn");
 const desktopContent = document.getElementById("main-content");
 const isMobile = () => window.innerWidth <= 768;
 
+// Content for each section
+const contentData = {
+  content1: [
+    "INDs, NDAs, ANDAs, BLAs, eCTDs, and global submission strategies",
+    "FDA 505(b)(2) and biosimilar pathways",
+    "Regulatory writing, data integrity audits, and submission review",
+    "Pre-IND & Type B/C Meeting prep and agency interactions",
+    "eCTD compilation and lifecycle management",
+    "Third-party audits for FDA, EMA, WHO compliance",
+  ],
+  content2: [
+    "cGMP audits, remediation, and quality systems implementation",
+    "Aseptic manufacturing consulting and facility readiness",
+    "QA/QC oversight, SOP writing, and training",
+    "Process & cleaning validations",
+    "Mock inspections and 483/NOD response support",
+    "Risk-based approach to QMS development",
+  ],
+  content3: [
+    "Analytical method validation and transfer",
+    "Bioassay and potency testing for biologics and biosimilars",
+    "Technology transfer support (domestic and international)",
+    "Product comparability, stability, and impurity strategy",
+    "End-to-end CMC support across preclinical to commercial phases",
+  ],
+};
+
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
     const targetId = button.getAttribute("data-target");
+    const points = contentData[targetId];
     const mobileBox = document.getElementById(targetId);
-    // Toggle for mobile
+
     if (isMobile()) {
+      // Toggle for mobile
       if (mobileBox.classList.contains("active")) {
         mobileBox.classList.remove("active");
         mobileBox.innerHTML = "";
@@ -27,14 +56,15 @@ buttons.forEach((button) => {
           mc.innerHTML = "";
         });
         mobileBox.classList.add("active");
-        mobileBox.innerHTML = `<p>This is the content for ${targetId.toUpperCase()} (mobile).</p>`;
+        mobileBox.innerHTML = `<ul>${points.map(item => `<li> ${item}</li>`).join("")}</ul>`;
       }
     } else {
-      // Show content in right panel (desktop)
-      desktopContent.innerHTML = `<p>This is the content for ${targetId.toUpperCase()} (desktop).</p>`;
+      // Desktop: Show content on right panel
+      desktopContent.innerHTML = `<ul>${points.map(item => `<li> ${item}</li>`).join("")}</ul>`;
     }
   });
 });
+
 
 // Main JavaScript for Abs Inc Website
 document.addEventListener('DOMContentLoaded', function () {
@@ -511,11 +541,6 @@ function showSlide(index) {
         dots[i].classList.toggle('active', i === index);
     });
     currentSlide = index;
-}
-
-function changeSlide(direction) {
-    let newIndex = (currentSlide + direction + testimonials.length) % testimonials.length;
-    showSlide(newIndex);
 }
 
 function goToSlide(index) {

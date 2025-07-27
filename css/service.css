@@ -59,7 +59,8 @@
 
 .point-card:hover {
   transform: translateY(-5px);
-  background-color: #e8f4ff;
+  background-color: #1B365D;
+  color: #fff;
 }
 
 .center-image {

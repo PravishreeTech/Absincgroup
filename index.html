@@ -43,7 +43,7 @@
                                 <a href="./index.html" class="nav-link">Home</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="./pages/about.html" class="nav-link">About Us</a>
+                                <a href="./pages/about.html" class="nav-link">About</a>
 
                             </li>
                             <li class="nav-item dropdown">
@@ -59,7 +59,7 @@
                                 <a href="./pages/career.html" class="nav-link">Careers</a>
                             </li>
                             <li class="nav-item">
-                                <a href="./pages/contact.html" class="nav-link">Contact Us</a>
+                                <a href="./pages/contact.html" class="nav-link">Contact</a>
                             </li>
                         </ul>
 
@@ -213,10 +213,6 @@
                         <h3>Our Vision</h3>
                         <p>Our mission is to provide top notch World class consultants and technical experts to our
                             clients companies and partnering clients.</p>
-                        <a href="#" class="cta-btn">
-                            <span class="tile" href="./pages/contact.html">Get in Touch</span>
-                            <i class="fa-solid fa-angle-right"></i>
-                        </a>
                     </div>
                     <div class="content-left">
                         <div class="video-container">
@@ -264,14 +260,19 @@
                         <!-- Left Part (Buttons) -->
                         <div class="toggle-buttons">
                             <button class="toggle-btn" data-target="content1">
-                                Topic 1 <i class="fa-solid fa-angle-right arrow-icon"></i>
+                                Regulatory Affairs Consulting <i class="fa-solid fa-angle-right arrow-icon"></i>
                             </button>
                             <div class="mobile-content" id="content1"></div>
 
                             <button class="toggle-btn" data-target="content2">
-                                Topic 2 <i class="fa-solid fa-angle-right arrow-icon"></i>
+                                Quality & Compliance <i class="fa-solid fa-angle-right arrow-icon"></i>
                             </button>
                             <div class="mobile-content" id="content2"></div>
+
+                            <button class="toggle-btn" data-target="content3">
+                                Analytical, Validation & Technical Services <i class="fa-solid fa-angle-right arrow-icon"></i>
+                            </button>
+                            <div class="mobile-content" id="content3"></div>
                         </div>
 
                         <!-- Right Part (Content/Image) -->
@@ -388,7 +389,7 @@
             </div>
             <!-- Right Side - Contact Form -->
             <div class="form-container">
-                <h2>Contact Us</h2>
+                <h2>Contact</h2>
                 <form>
                     <input type="text" placeholder="Your Name" required>
                     <input type="email" placeholder="Your Email" required>
@@ -412,7 +413,7 @@
                                 <a href="#" target="_blank">Careers</a>
                                 <a href="#">Code of Conduct</a>
                                 <a href="#">Events</a>
-                                <a href="#">Contact Us</a>
+                                <a href="#">Contact</a>
                             </div>
                             <div class="footer-links-row">
                                 <a href="#">Third-Party Access</a>
@@ -470,34 +471,6 @@
         </button>
     </div>
 
-    <script>
-        const tileButtons = document.querySelectorAll('.tile-btn');
-        const contentRight = document.querySelector('.content-right');
-
-        const tileData = {
-            'Regulatory': {
-                heading: 'Regulatory Excellence',
-                text: "Maximize your asset's probability of success in a complex, competitive environment with comprehensive solutions that intelligently connect best-in-class insights, technology, and expertise."
-            },
-            'Unique Experts': {
-                heading: 'Dedicated Clinical Experts',
-                text: "Abs Inc Biotech provides full-service clinical development solutions with specialized, dedicated teams."
-            }
-        };
-
-        tileButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const title = button.querySelector('.tile-heading').innerText;
-
-                if (tileData[title]) {
-                    contentRight.innerHTML = `
-          <h3>${tileData[title].heading}</h3>
-          <p>${tileData[title].text}</p>
-        `;
-                }
-            });
-        });
- 
     </script>
         <script src="./js/main.js">
     </script>
