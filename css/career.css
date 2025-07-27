@@ -1,3 +1,26 @@
+/* Careers */
+.careers-section {
+  position: relative;
+  top : 86px;
+  background: #f8fbfe;
+  padding: 30px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.careers-title {
+  font-size: 2.2rem;
+  color: #004a6e;
+  margin-bottom: 15px;
+}
+
+.careers-intro {
+  font-size: 1.05rem;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+}
 
 /* Footer */
 .footer {
