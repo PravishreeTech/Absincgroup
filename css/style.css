@@ -407,7 +407,6 @@ body {
         width: 85%;
     }
 }
-
 /*********** Hero Section Ends *************/
 
 /*********** News Ticker Section Starts *************/
@@ -878,7 +877,7 @@ body {
     margin-top: 15px;
 }
 
-.testimonial-section .dot {
+.testimonial-section .testimonial-dot {
     height: 10px;
     width: 10px;
     margin: 0 5px;
@@ -888,7 +887,7 @@ body {
     cursor: pointer;
 }
 
-.testimonial-section .dot.active {
+.testimonial-section .testimonial-dot.active {
     background-color: #0056cc;
 }
 /*********** Testimonials Section Ends *************/

@@ -92,6 +92,7 @@ window.addEventListener("click", (e) => {
     }
 });
 
+
 // Main JavaScript for Abs Inc Website
 document.addEventListener('DOMContentLoaded', function () {
     // Initialize all components
@@ -307,10 +308,6 @@ function initializeBiotechInfoButtons() {
 // Call both initializers
 initializeTabSections();
 initializeBiotechInfoButtons();
-
-
-
-
 
 // Carousel functionality
 function initializeCarousels() {

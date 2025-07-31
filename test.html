@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SLider</title>
 
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./test.css">
 
     <!-- Google Fonts -->
@@ -13,53 +15,70 @@
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <!-- jQuery (first) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick CSS files -->
+    <link rel="stylesheet" href="./slick.css">
+    <link rel="stylesheet" href="./slick-theme.css">
 
-    <!-- Slick CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <!-- Slick CSS links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
 
-    <!-- Slick JS -->
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+    <!-- Jquery link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js">
 
 </head>
+
 <body>
-    
+
     <!-- Testimonials Section -->
-        <section class="testimonial-section">
-            <div class="carousel">
-                <div class="testimonial active">
-                    <img src="https://i.pravatar.cc/100?img=1" alt="User 1">
-                    <p>My favorite espresso. Anyone who enjoys a good espresso should definitely order their espresso!
-                        And it’s clean, like all their coffee; no added poisons. Can’t beat that. Enjoy!!</p>
-                    <div class="quote">❝</div>
-                    <div class="name">Barbara Leone</div>
-                    <div class="role">App Developer</div>
-                </div>
-
-                <div class="testimonial">
-                    <img src="https://i.pravatar.cc/100?img=2" alt="User 2">
-                    <p>This product changed my workflow completely. Clean design, excellent support. Highly recommend to
-                        anyone who values quality work.</p>
-                    <div class="quote">❝</div>
-                    <div class="name">Daniel Kim</div>
-                    <div class="role">UI/UX Designer</div>
-                </div>
-
-                <div class="testimonial">
-                    <img src="https://i.pravatar.cc/100?img=3" alt="User 3">
-                    <p>I love using this app every day. It’s intuitive, fast, and has all the features I need to stay
-                        productive at work.</p>
-                    <div class="quote">❝</div>
-                    <div class="name">Sophie Turner</div>
-                    <div class="role">Project Manager</div>
-                </div>
+    <section class="testimonial-section">
+        <div class="carousel">
+            <div class="testimonial">
+                <img src="https://i.pravatar.cc/100?img=1" alt="User 1">
+                <p>My favorite espresso. Anyone who enjoys a good espresso should definitely order their espresso!
+                    And it’s clean, like all their coffee; no added poisons. Can’t beat that. Enjoy!!</p>
+                <div class="quote">❝</div>
+                <div class="name">Barbara Leone</div>
+                <div class="role">App Developer</div>
             </div>
-        </section>
 
-   <script src="./test.js"></script>   
+            <div class="testimonial">
+                <img src="https://i.pravatar.cc/100?img=2" alt="User 2">
+                <p>This product changed my workflow completely. Clean design, excellent support. Highly recommend to
+                    anyone who values quality work.</p>
+                <div class="quote">❝</div>
+                <div class="name">Daniel Kim</div>
+                <div class="role">UI/UX Designer</div>
+            </div>
+
+            <div class="testimonial">
+                <img src="https://i.pravatar.cc/100?img=3" alt="User 3">
+                <p>I love using this app every day. It’s intuitive, fast, and has all the features I need to stay
+                    productive at work.</p>
+                <div class="quote">❝</div>
+                <div class="name">Sophie Turner</div>
+                <div class="role">Project Manager</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jquery Script Tag -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> -->
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Slick -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <!-- Slick JS -->
+    <script src="./slick.min.js"></script>
+
+    <!-- Custom Js Script -->
+    <!-- <script src="./test.js"></script> -->
+    <script>
+        $('.carousel').slick();
+    </script>
 
 </body>
+
 </html>
