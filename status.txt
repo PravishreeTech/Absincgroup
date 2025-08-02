@@ -34,6 +34,6 @@ Next changes:
     1. Team section need to be done after new content
     2. The new section in Home Page should be finalized by client
     3. Client should share the particular website link from which the details should be fetched from News Page
-
+    4. Images need to be changed
 
 =======================
