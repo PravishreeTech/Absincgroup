@@ -18,127 +18,120 @@ body {
     background-color: #fff;
 }
 
-.container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-}
-
-/*********** Testimonials Section Starts *************/
-.testimonial-section{
-    background: #1B365D;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.testimonial-section .carousel {
+/************************************************* CONTACT Section ********************************************************/
+.contact{
     position: relative;
-    /* top: 172px; */
-    max-width: 600px;
-    margin: 0 auto;
-    background: #1B365D;
-    padding: 40px 20px;
-    text-align: center;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-
-    /* display: block; */
-    /* display: flex;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; */
-}
-
-.testimonial-section .testimonial {
-    display: flex !important;
     flex-direction: column;
-    align-items: center;
-    transition: opacity 0.5s ease-in-out;
-    padding: 30px 20px;
-    background-color: #fff;
-    border-radius: 15px;
-
-    /* max-width: 1300px;
-    width: 100%; */
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/contact.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-
-/* .testimonial-section .testimonial.active {
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #f1f1f1;
+}
+.contact .content p{
+    font-weight: 500;
+    color: #fff;
+}
+.contact .container{
+    width: 100%;
     display: flex;
-} */
-
-.testimonial-section .testimonial img {
-    width: 100px;
-    height: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactinfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
+    font-size: 22px;
 }
-
-.testimonial-section .testimonial p {
-    font-size: 16px;
-    color: #000;
-    line-height: 1.6;
-    margin-bottom: 20px;
+.container .contactinfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 15px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 500;
 }
-
-.testimonial-section .testimonial .name {
-    font-weight: bold; 
-    color: #000;
+.container .contactinfo .box .text h3{
+    font-weight: 700;
+    color: rgb(110, 177, 225);
+}
+.contactform{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactform h2{
     font-size: 30px;
+    font-weight: 500;
 }
-
-.testimonial-section .testimonial .role {
-    font-size: 14px;
-    color: #555;
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
 }
-
-.testimonial-section .testimonial .quote {
-    color: #0056cc;
-    font-size: 24px;
-    margin: 15px 0;
+.contactform .inputbox input,
+.contactform .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
 }
-
-.slick-prev,
-.slick-next {
-  background-color: #fff;
-  border-radius: 50%;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  width: 40px;
-  height: 40px;
-  z-index: 10;
-}
-
-.slick-prev:before,
-.slick-next:before {
-  color: #1B365D;
-  font-size: 24px;
-}
-
-/* Position arrows properly */
-.slick-prev {
-  left: -50px;
-}
-
-.slick-next {
-  right: -50px;
-}
-
-.testimonial-section .dots {
-    margin-top: 15px;
-}
-
-.testimonial-section .dot {
-    height: 10px;
-    width: 10px;
-    margin: 0 5px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
+.contactform #submit{
+    background-color:#214ccbf1;
+    width: 100px;
+    height: 50px;
+    color: #fff;
     cursor: pointer;
+    border: none;
 }
 
-.testimonial-section .dot.active {
-    background-color: #0056cc;
+@media (max-width:991px){
+    .contact{
+        padding: 50px;
+    }
+    .contact .container{
+        flex-direction: column;
+    }
+    .contact .container .contactinfo{
+        margin-bottom: 40px;
+    }
+    .contact .contactinfo{
+        width: 100%;
+    }
+    .contact .contactform{
+        width: 100%;
+    }
+    
 }
-/*********** Testimonials Section Ends *************/

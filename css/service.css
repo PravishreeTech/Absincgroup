@@ -88,10 +88,12 @@
 }
 
 .flip-card-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 40px;
+  justify-items: center;
+  align-items: start;
   margin-top: 40px;
 }
 
@@ -145,11 +147,15 @@
   transform: rotateY(180deg);
 }
 
+@media screen and (max-width: 900px) {
+  .flip-card-container{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
 @media screen and (max-width: 480px) {
   .flip-card-container{
-    gap: 100px;
-    flex-direction: column;
-    align-items: center;
+   grid-template-columns: repeat(1, 1fr);
   }
 
   .flip-card{
