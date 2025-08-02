@@ -1,0 +1,39 @@
+22-07-2025 : Project Assigned
+
+24-07-2025: 1st Client Meeting
+
+27-07-2025: 2nd Client Meeting
+
+31-07-2025: 3rd Client Meeting (Ratnakar & Yatheswar)
+
+01-08-2025:
+    1. Set icon in the tab for each page
+    2. Renamed About to About Us in Navbar section
+    3. Set the carousel in Home Page for Testimonials and Banner section
+    4. Created a complete new Js Script "script.js"
+    5. Added How AI Enhances Strategic Regulatory Consulting...... in About Us Page
+    6. Careers Page (Client said to remove How to Apply and again said to leave it so I didn't changed it) but I removed the feature that on clicking on each job category it will redirect to jobs-page because client said to keep it simple
+
+Next changes:
+    1. Team section & Teams page will be updated after new content
+    2. Contact Us form / page
+    3. Services Page
+    4. Cosultant Foucs Area in Home Section (Ratnakar Sir, I need your help in this)
+
+=======================
+
+    1. Contact Form is done in Home Page and Contact Us Page
+    2. Services Page is done but the content is more so the look is not nice
+
+
+02-08-2025:
+    1. News Page testing is done.
+    2. What sets us Apart section is done in Home Page
+
+Next changes:
+    1. Team section need to be done after new content
+    2. The new section in Home Page should be finalized by client
+    3. Client should share the particular website link from which the details should be fetched from News Page
+
+
+=======================
