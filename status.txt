@@ -35,5 +35,16 @@ Next changes:
     2. The new section in Home Page should be finalized by client
     3. Client should share the particular website link from which the details should be fetched from News Page
     4. Images need to be changed
+    5. AI generated video should be done
 
-=======================
+
+03-08-2025:
+    1. Images are changed
+
+
+Next changes:
+    1. Team section need to be done after new content
+    2. The new section in Home Page should be finalized by client
+    3. Client should share the particular website link from which the details should be fetched from News Page
+    4. AI generated video should be done
+
