@@ -57,9 +57,6 @@
                             <li class="nav-item dropdown">
                                 <a href="./pages/team.html" class="nav-link">Team</a>
                             </li>
-                            <!-- <li class="nav-item dropdown">
-                                <a href="./pages/spc.html" class="nav-link">SPC</a>
-                            </li> -->
                             <li class="nav-item">
                                 <a href="./pages/career.html" class="nav-link">Careers</a>
                             </li>
@@ -102,8 +99,7 @@
         <section class="hero-section">
             <div class="hero-slider" id="hero-slider">
                 <div class="hero-slide active">
-                    <div class="hero-bg"
-                        style="background-image: url('./assets/images/banner-1.jpg')">
+                    <div class="hero-bg" style="background-image: url('./assets/images/banner-3.jpg')">
                     </div>
                     <div class="hero-content">
                         <h1 class="hero-title">Strategic Consulting for Biologics, Advanced Therapies, cGMP
@@ -119,7 +115,7 @@
                     </div>
                 </div>
 
-                <div class="hero-slide">
+                <!-- <div class="hero-slide">
                     <div class="hero-bg"
                         style="background-image: url('./assets/images/banner-2.jpg')">
                     </div>
@@ -147,10 +143,10 @@
                             <i class="fa-solid fa-angle-right"></i>
                         </a>
                     </div>
-                </div>
+                </div> -->
             </div>
 
-            <div class="hero-controls">
+            <!-- <div class="hero-controls">
                 <button title="btn" class="hero-prev"><i class="fa-solid fa-angle-left"></i></button>
                 <div class="hero-pagination">
                     <span class="dot active"></span>
@@ -158,7 +154,7 @@
                     <span class="dot"></span>
                 </div>
                 <button title="btn" class="hero-next"><i class="fa-solid fa-angle-right"></i></button>
-            </div>
+            </div> -->
         </section>
 
         <!-- News Ticker -->
@@ -177,15 +173,6 @@
                     <a href="./pages/career.html">Partner with ABSincgroup today — Excellence. Compliance.
                         Innovation.</a>
                 </div>
-                <!-- <div class="ticker-item">
-                    <a href="#">America's Greatness in the Biopharmaceutical Sector</a>
-                </div>
-                <div class="ticker-item">
-                    <a href="#">Understanding the Use of Medicines in the U.S. 2025</a>
-                </div>
-                <div class="ticker-item">
-                    <a href="#">Abs Inc named a front-runner in generative AI innovation</a>
-                </div> -->
             </div>
             <div class="ticker-controls">
                 <button title="btn" class="ticker-prev"><i class="fa-solid fa-chevron-left"></i></button>
@@ -200,12 +187,7 @@
                     <div class="content-left">
                         <div class="video-container">
                             <div class="video-placeholder">
-                                <!-- <img src="https://images.pexels.com/photos/3825581/pexels-photo-3825581.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1"
-                                    alt="Connected Intelligence"> -->
-                                <img src="./assets/images/mission.jpg" alt="">    
-                                <!-- <div class="play-button">
-                                    <i class="fas fa-play"></i>
-                                </div> -->
+                                <img src="./assets/images/mission.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -214,7 +196,6 @@
                         <p>To deliver world-class consulting solutions to life sciences companies by providing access to
                             elite regulatory strategists, quality systems experts, and hands-on technical
                             leaders—dedicated to ensuring global compliance and accelerating product success.</p>
-                        <!-- <p>With our unique consortium model, we connect you with seasoned professionals, actionable insights, and advanced solutions tailored to your needs. By integrating deep industry knowledge with the latest in compliance, quality systems, analytics, and technology, we help you overcome obstacles and unlock new opportunities for growth and success.</p> -->
                     </div>
                 </div>
             </div>
@@ -236,12 +217,7 @@
                     <div class="content-left">
                         <div class="video-container">
                             <div class="video-placeholder">
-                                <!-- <img src="https://images.pexels.com/photos/3825581/pexels-photo-3825581.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1"
-                                    alt="Connected Intelligence"> -->
-                                <img src="./assets/images/vision.jpg" alt="">    
-                                <!-- <div class="play-button">
-                                    <i class="fas fa-play"></i>
-                                </div> -->
+                                <img src="./assets/images/vision.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -257,9 +233,8 @@
                     <h2 class="video-heading">Simply ask</h2>
                     <div class="video-container large">
                         <div class="video-placeholder">
-                            <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&dpr=1"
-                                alt="AI Assistant">
-                            <div class="play-button">
+                            <video id="video" src="./assets/videos/Absinc Group.mp4" type="video/mp4" controls></video>
+                            <div class="play-button" id="playButton">
                                 <i class="fas fa-play"></i>
                             </div>
                         </div>
@@ -267,7 +242,7 @@
                 </div>
             </div>
         </section>
- 
+
         <!-- Solutions Tab Section -->
         <section id="explore-solutions" class="solutions-tab-section">
             <div class="container">
@@ -306,40 +281,57 @@
         </section>
 
         <!-- What Sets Apart section -->
-        <section class="why-join-us-section consulting-section">
+        <section class="what-sets-apart-section consulting-section">
             <div class="content-block">
                 <h2>What Sets ABSincgroup Apart</h2>
-                <h6>Unlike traditional consulting firms that focus primarily on regulatory documentation or quality oversight, ABSincgroup bridges the gap between strategic compliance and real-world operational execution. 
+                <!-- <h6>Unlike traditional consulting firms that focus primarily on regulatory documentation or quality
+                    oversight, ABSincgroup bridges the gap between strategic compliance and real-world operational
+                    execution.
                     Here’s how we stand apart from industry peers like regulatory and quality Consulting:</h6>
                 <h4>✅ Hands-On Expertise in Manufacturing and Fill-Finish Operations</h4>
                 <ol style="list-style: disc; padding-left: 50px">
-                    <li>While other firms offer high-level QA and regulatory guidance, we go beyond — into the plant, the cleanroom, and the fill line. Our consultants bring deep experience resolving real-time production issues, aseptic processing challenges, and formulation instability across biologics, vaccines, mAbs, and cell & gene therapies.</li>
+                    <li>While other firms offer high-level QA and regulatory guidance, we go beyond — into the plant,
+                        the cleanroom, and the fill line. Our consultants bring deep experience resolving real-time
+                        production issues, aseptic processing challenges, and formulation instability across biologics,
+                        vaccines, mAbs, and cell & gene therapies.</li>
                 </ol>
 
                 <h4>✅ End-to-End Technical and Regulatory Integration</h4>
                 <ol style="list-style: disc; padding-left: 50px;">
-                    <li>We provide not just product characterization support, but also design and implement non-clinical and clinical testing protocols, bridging the gap from discovery to human trials with precision and compliance.</li>
+                    <li>We provide not just product characterization support, but also design and implement non-clinical
+                        and clinical testing protocols, bridging the gap from discovery to human trials with precision
+                        and compliance.</li>
                 </ol>
 
                 <h4>✅ Complex Analytical Method Development & Troubleshooting</h4>
                 <ol style="list-style: disc; padding-left: 50px;">
-                    <li>Our team solves method development challenges others can’t. From biologics to synthetic molecules, we help design, validate, and troubleshoot assays that support product release, stability, comparability, and regulatory filings.</li>
+                    <li>Our team solves method development challenges others can’t. From biologics to synthetic
+                        molecules, we help design, validate, and troubleshoot assays that support product release,
+                        stability, comparability, and regulatory filings.</li>
                 </ol>
 
                 <h4>✅ Six Sigma Black Belt–Driven Efficiency</h4>
                 <ol style="list-style: disc; padding-left: 50px;">
-                    <li>We saved our client companies multi millions in operational expenses. Our certified Lean Six Sigma Black Belt experts don’t just advise — they implement. We reduce batch failures, cycle times, and manufacturing waste using proven methodologies that transform underperforming operations into high-efficiency, inspection-ready environments.</li>
+                    <li>We saved our client companies multi millions in operational expenses. Our certified Lean Six
+                        Sigma Black Belt experts don’t just advise — they implement. We reduce batch failures, cycle
+                        times, and manufacturing waste using proven methodologies that transform underperforming
+                        operations into high-efficiency, inspection-ready environments.</li>
                 </ol>
 
                 <h4>✅ Strategic + Tactical Execution</h4>
                 <ol style="list-style-type: disc; padding-left: 50px;">
-                    <li>We deliver strategic regulatory and QA solutions and get involved in the execution — from cleaning validation and media fills to CAPA closure, deviation remediation, and on-site training.</li>
+                    <li>We deliver strategic regulatory and QA solutions and get involved in the execution — from
+                        cleaning validation and media fills to CAPA closure, deviation remediation, and on-site
+                        training.</li>
                 </ol>
 
                 <h4>✅ Support for Struggling Corporations & Compliance Recovery</h4>
                 <ol style="list-style-type: disc; padding-left: 50px;">
-                    <li>We specialize in working with companies facing serious compliance risks, operational inefficiencies, or stalled development programs. Whether you’re recovering from a 483/Warning Letter or scaling toward commercialization, we bring clarity, speed, and precision to get you back on track.</li>
-                </ol>
+                    <li>We specialize in working with companies facing serious compliance risks, operational
+                        inefficiencies, or stalled development programs. Whether you’re recovering from a 483/Warning
+                        Letter or scaling toward commercialization, we bring clarity, speed, and precision to get you
+                        back on track.</li>
+                </ol> -->
             </div>
         </section>
 
@@ -347,38 +339,29 @@
         <section class="testimonial-section">
             <div class="carousel">
                 <div class="testimonial active">
-                    <!-- <img src="https://i.pravatar.cc/100?img=1" alt="User 1"> -->
-                    <p>“ABSincgroup helped us remediate a critical FDA warning letter under tight timelines. Their team
+                    <p class="quote">“ABSincgroup helped us remediate a critical FDA warning letter under tight timelines. Their team
                         delivered exceptional insight and hands-on execution.”</p>
-                    <div class="quote">⭐⭐⭐⭐⭐</div>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
                     <div class="name">VP Quality</div>
                     <div class="role">Cell Therapy Biotech</div>
                 </div>
 
                 <div class="testimonial">
-                    <!-- <img src="https://i.pravatar.cc/100?img=2" alt="User 2"> -->
-                    <p>“Their biologics manufacturing experts streamlined our tech transfer and reduced our batch
+                    <p class="quote">“Their biologics manufacturing experts streamlined our tech transfer and reduced our batch
                         failure rate significantly. Highly professional and knowledgeable.”</p>
-                    <div class="quote">⭐⭐⭐⭐⭐</div>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
                     <div class="name">Head of Operations</div>
                     <div class="role">Vaccines Developer </div>
                 </div>
 
                 <div class="testimonial">
-                    <!-- <img src="https://i.pravatar.cc/100?img=3" alt="User 3"> -->
-                    <p>“We relied on ABSincgroup for our monoclonal antibody facility qualification and regulatory
+                    <p class="quote">“We relied on ABSincgroup for our monoclonal antibody facility qualification and regulatory
                         support. Their validation and QA consultants were top-tier.”</p>
-                    <div class="quote">⭐⭐⭐⭐⭐</div>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
                     <div class="name">Director of CMC</div>
                     <div class="role">Global Pharma</div>
                 </div>
-
-                <!-- Dots -->
-                <!-- <div class="dots">
-                    <span class="dot active" onclick="goToSlide(0)"></span>
-                    <span class="dot" onclick="goToSlide(1)"></span>
-                    <span class="dot" onclick="goToSlide(2)"></span>
-                </div> -->
+                
                 <div class="dots">
                     <span class="testimonial-dot"></span>
                     <span class="testimonial-dot"></span>
@@ -395,110 +378,52 @@
                     <h3>Team</h3>
                 </div>
                 <div class="insights-grid">
-                    <div class="insight-card large">
-                        <!-- <div class="card-image"
-                            style="background-image: url('https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1')">
-                        </div> -->
-                        <div class="card-image" style="background-image: url('./assets/images/team1.jpg')"></div>
-                        <div class="card-content">
-                            <h3>👩‍💼 Ms. Sheila Smith, MBA</h3>
-                            <p>Vice President, Human Resources</p>
-                            <p>Sheila Smith, MBA, is Vice President of Human Resources at ABSincgroup, bringing over two
-                                decades of HR leadership in life sciences, biologics, and regulated manufacturing. She
-                                leads company-wide talent strategy, workforce development, and HR operations — ensuring
-                                ABSincgroup attracts and retains top-tier scientific and regulatory experts.</p>
-                            <p>Sheila has deep expertise in hiring strategy, compensation planning, performance systems,
-                                and leadership development. She also oversees vendor contracting and qualification for
-                                HR and training service providers, ensuring compliance and cost-effectiveness.</p>
-                            <p>Prior to ABSincgroup, Sheila held senior HR roles at major biopharma firms, where she led
-                                large-scale workforce expansion, HRIS implementation, and global compensation
-                                initiatives. She holds an MBA in Human Resource Management.</p>
+                    <a href="./pages/team.html#insights">
+                        <div class="insight-card large">
+                            <div class="card-content">
+                                <h3 class="name">Ms. Sheila Smith, MBA</h3>
+                                <h4 class="designation">Vice President, Human Resources</h4>
+                                <h6 class="description">A strategic client relationship leader driving partnership growth and project success.</h6>
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="insight-card large">
-                        <!-- <div class="card-image"
-                            style="background-image: url('https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1')">
-                        </div> -->
-                        <div class="card-image" style="background-image: url('./assets/images/team2.jpg')"></div>
-                        <div class="card-content">
-                            <h3>🤝 Mr. V. Nathan Roy, BS</h3>
-                            <p>Vice President, Business Development & Marketing</p>
-                            <p>Nathan Roy serves as Vice President of Business Development & Marketing at ABSincgroup,
-                                where he leads strategic growth initiatives across the biologics, cell and gene therapy,
-                                and pharmaceutical sectors. With a strong background in pharmaceutical sales and
-                                marketing, Nathan brings over 15 years of experience driving revenue, forming strategic
-                                alliances, and expanding global market presence in regulated healthcare industries.</p>
-                            <p>Nathan is responsible for developing client partnerships, shaping go-to-market
-                                strategies, and leading branding efforts that reflect ABSincgroup’s deep expertise in
-                                regulatory compliance, cGMP manufacturing, and quality systems consulting. He plays a
-                                key role in identifying new market opportunities, overseeing proposal development, and
-                                guiding cross-functional commercial campaigns.</p>
-                            <p>A graduate in Pharmaceutical Sales and Marketing, Nathan’s success stems from his ability
-                                to translate technical consulting services into tailored solutions that meet the
-                                evolving needs of biotech, pharma, and medical device clients. His leadership supports
-                                ABSincgroup’s growth as a trusted partner for innovation, compliance, and
-                                operational excellence.</p>
+                    <a href="./pages/team.html#insights">
+                        <div class="insight-card large">
+                            <div class="card-content">
+                                <h3 class="name">Mr. V. Nathan Roy, BS</h3>
+                                <h4 class="designation">Vice President, Business Development & Marketing</h4>
+                                <h6 class="description">Expert in international market expansion and building strategic industry partnerships.</h6>
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="insight-card large">
-                        <!-- <div class="card-image"
-                            style="background-image: url('https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1')">
-                        </div> -->
-                        <div class="card-image" style="background-image: url('./assets/images/team2.jpg')"></div>
-                        <div class="card-content">
-                            <h3>Dr. Niranjan M. Kumar, PDF, P.hD.</h3>
-                            <p>Masters in Management (Wharton Business School, University of Pennsylvania)</p>
-                            <p>President & Founding Director</p>
-                            <p>Dr. Niranjan Kumar is the President and Founding Director of ABSincgroup, a premier
-                                regulatory and technical consulting firm specializing in biologics, pharmaceuticals,
-                                cell and gene therapy, and medical devices. With a distinguished career spanning over 30
-                                + years, Dr. Kumar has held senior leadership and global management roles across
-                                top-tier life sciences and global Biopharma companies, driving R&D, innovation, Quality
-                                & Regulatory compliance and operational excellence on a worldwide scale.</p>
-                            <p>A visionary leader with deep scientific and regulatory insight, Dr. Kumar founded
-                                ABSincgroup to address the growing complexity of product development, FDA compliance,
-                                and manufacturing challenges in highly regulated sectors. Under his leadership, the
-                                company has built an elite network of scientific and regulatory experts, serving as a
-                                trusted advisor to numerous Fortune 500 clients, emerging biotechs, and multinational
-                                pharma companies. He has Six Sigma Black Belt certification and USP expert committee
-                                member. </p>
-                            <p>Dr. Kumar has successfully led strategic partnerships, regulatory remediation programs,
-                                and product development initiatives that have transformed clients’ business outcomes —
-                                from resolving FDA Warning Letters and Consent Decrees to accelerating commercialization
-                                and GMP readiness. His track record includes successful consulting engagements across
-                                North America, Europe, and the Middle East.</p>
-                            <p>Known for combining scientific precision with executive leadership, Dr. Kumar continues
-                                to expand ABSincgroup’s global impact through expert-led consulting in FDA readiness,
-                                cGMP manufacturing, quality systems, regulatory strategy, and technology transfer. Dr.
-                                Kumar published in peer reviewed journal and presented in national and international
-                                conferences. Authored > 1000 technical documents and IND, NDA, eBLAs and MAA and
-                                core-team for launching blockbuster biologics.</p>
+                    <a href="./pages/team.html#insights">
+                        <div class="insight-card large">
+                            <div class="card-content">
+                                <h3 class="name">Dr. Niranjan M. Kumar, PDF, P.hD.</h3>
+                                <h4 class="designation">Masters in Management (Wharton Business School, University of Pennsylvania)</h4>
+                                <h4 class="designation">President & Founding Director</h4>
+                                <h6 class="description">Global biopharma leader with decades of experience in regulatory strategy and quality leadership.</h6>
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
-                    <!-- <div class="insight-card large">
-                        <div class="card-image"
-                            style="background-image: url('https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1')">
+                    <a href="./pages/team.html#insights">
+                        <div class="insight-card large">
+                            <div class="card-content">
+                                <h3 class="name">Senior Manufacturing & Quality Leader</h3>
+                                <h4 class="designation">Operational Strategist and Manufacturing Systems Expert</h4>
+                                <h6 class="description">Operational strategist specializing in quality remediation, compliance, and manufacturing excellence.</h6>
+                            </div>
                         </div>
-                        <div class="card-content">
-                            <h3>Ms. Sheila Smith</h3>
-                            <p>Client Relationship and Accounts Management Director</p>
-
-                        </div>
-                    </div>
-
-                    <div class="insight-card large">
-                        <div class="card-image"
-                            style="background-image: url('https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1')">
-                        </div>
-                        <div class="card-content">
-                            <h3>Mr. V. Nathan</h3>
-                            <p>Business Development Manager</p>
-                        </div>
-                    </div> -->
+                    </a>
                 </div>
+
+                <a href="./pages/team.html#insights" class="cta-btn">
+                    <span class="tile">Know More</span>
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
             </div>
         </section>
 
@@ -558,12 +483,12 @@
             </div>
         </section>
 
-        <!-- Footer -->
-        <footer class="footer">
+        <!-- Old Footer -->
+        <!-- <footer class="footer">
             <div class="footer-main">
                 <div class="container">
                     <div class="footer-content">
-                        <div class="footer-copyright">©2025 Abs Inc Inc, All Rights Reserved.</div>
+                        <div class="footer-copyright">©2025 ABSINCGROUP USA, All Rights Reserved.</div>
                         <div class="footer-links">
                             <div class="footer-links-row">
                                 <a href="#" target="_blank">Investor Relations</a>
@@ -591,14 +516,12 @@
                     <div class="footer-bottom-content">
                         <div class="footer-logo">
                             <a href="/">
-                                <!-- Abs -->
                                 <img src="./assets/images/Absinc-logo-footer.svg" alt="Abs Inc" width="236">
                             </a>
                         </div>
                         <div class="footer-copyright-extended">
-                            <p>© 2018-2025. All rights reserved. Abs Inc® is a registered trademark of Abs Inc Inc. in
-                                the United States, the European Union, and various other countries.<br>
-                                HEALTHCARE-GRADE AI® is a registered trademark of Abs Inc Inc. in the United States.</p>
+                            <p>© 2018-2025. All rights reserved. ABSINCGROUP USA® is a registered trademark of ABSINCGROUP USA in the United States, the European Union, and other countries.
+                                HEALTHCARE-GRADE AI® is a registered trademark of ABSINCGROUP USA in the United States.</p>
                         </div>
                         <div class="footer-social">
                             <a href="https://www.facebook.com/Abs Inc" title="link" rel="noopener" target="_blank"
@@ -628,6 +551,83 @@
                 </a>
             </div>
 
+        </footer> -->
+
+        <!-- New Footer -->
+        <footer class="footer">
+            <div class="footer-main">
+                <div class="container">
+                    <div class="footer-content">
+
+                        <!-- Navigation Links -->
+                        <div class="footer-links">
+                            <div class="footer-links-row">
+                                <a href="/about">About Us</a>
+                                <a href="/services">Services</a>
+                                <a href="/careers">Careers</a>
+                                <a href="/contact">Contact</a>
+                                <a href="/news">News & Insights</a>
+                            </div>
+                            <div class="footer-links-row">
+                                <a href="/privacy-policy" target="_blank">Privacy Policy</a>
+                                <a href="/terms-of-use" target="_blank">Terms of Use</a>
+                                <a href="/privacy-choices" target="_blank">Your Privacy Choices</a>
+                                <a href="/accessibility" target="_blank">Accessibility Statement</a>
+                                <a href="/sitemap" target="_blank">Sitemap</a>
+                            </div>
+                        </div>
+
+                        <!-- Address & Contact Info -->
+                        <div class="footer-contact">
+                            <p>
+                                ABSINCGROUP USA<br>
+                                80 Main Street, 5th Floor, West Orange, NJ 07052<br>
+                                P.O. Box 534, Nazareth, PA 18064<br>
+                                Phone: <a href="tel:+14845442673">484-544-2673</a><br>
+                                Email: <a href="mailto:info@absincgroup.com">info@absincgroup.com</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="footer-bottom-content">
+                        <div class="footer-logo">
+                            <a href="/">
+                                <img src="./assets/images/Absinc-logo-footer.svg" alt="ABSINCGROUP USA Logo"
+                                    width="236">
+                            </a>
+                        </div>
+                        <div class="footer-copyright-extended">
+                            <p>
+                                © 2018-2025. All rights reserved. ABSINCGROUP USA® is a registered trademark of
+                                ABSINCGROUP USA in the United States, the European Union, and other countries.<br>
+                                HEALTHCARE-GRADE AI® is a registered trademark of ABSINCGROUP USA in the United States.
+                            </p>
+                        </div>
+                        <div class="footer-social">
+                            <a href="https://www.linkedin.com/company/absincgroupusa" title="LinkedIn"
+                                rel="noopener noreferrer" target="_blank" class="social-link"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.facebook.com/AbsInc" title="Facebook" rel="noopener noreferrer"
+                                target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/AbsInc_global" title="Twitter" rel="noopener noreferrer"
+                                target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/AbsInc" title="Instagram" rel="noopener noreferrer"
+                                target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="final-copyright">
+                <a href="https://pravishree.com/" target="_blank" rel="noopener noreferrer">
+                    <p>Developed by <b>Pravishree</b></p>
+                </a>
+            </div>
         </footer>
 
         <!-- Back to Top Button -->

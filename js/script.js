@@ -133,6 +133,30 @@ buttons.forEach((button) => {
     });
 });
 
+////////////// VIDEO SECTION //////////////
+// to play the video
+const video = document.getElementById("video");
+const playBtn = document.getElementById("playButton");
+
+// Play video and hide button on click
+playBtn.addEventListener("click", function () {
+  video.play();
+  playBtn.style.display = "0";
+  playBtn.style.pointerEvents = "none"
+});
+
+// Show play button when video is paused
+video.addEventListener("pause", function () {
+  playBtn.style.opacity = "1";
+  playBtn.style.pointerEvents = "auto";
+});
+
+// Optional: Hide again when video is played from controls
+video.addEventListener("play", function () {
+  playBtn.style.opacity = "0";
+  playBtn.style.pointerEvents = "none";
+});
+
 ////////////// TESTIMONIALS SECTION //////////////
 document.addEventListener("DOMContentLoaded", function () {
     const testimonials = document.querySelectorAll(".testimonial");

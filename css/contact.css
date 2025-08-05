@@ -6,7 +6,7 @@
   padding: 30px 20px;
   font-family: 'Segoe UI', sans-serif;
   text-align: center;
-}
+} 
 
 .section-title {
   font-size: 2.5rem;
@@ -41,12 +41,12 @@
 .contact-card h3 {
   color: #0077b6;
   margin-bottom: 15px;
-  font-size: 1.3rem;
+  font-size: var(--section-subheadings);
 }
 
 .contact-card p {
   margin: 10px 0;
-  font-size: 0.95rem;
+  font-size: var(--section-content);
   color: #333;
 }
 
@@ -58,6 +58,7 @@
 .contact-card a {
   color: #0077b6;
   text-decoration: none;
+  font-size: var(--section-content);
 }
 
 .contact-card a:hover {

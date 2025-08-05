@@ -19,7 +19,11 @@
 .head{
   color: #1B365D;
   padding-bottom: 10px;
-  font-size: 30px;
+  font-size: var(--section-headings);
+}
+
+.text-content p{
+  font-size: var(--section-content);
 }
 
 .image-content {
@@ -51,6 +55,7 @@
   padding: 30px;
   background: #fff;
   border-left: 5px solid #1B365D;
+  border-right: 5px solid #1B365D;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
@@ -58,13 +63,56 @@
 .content-block h2 {
   color: #1B365D;
   margin-bottom: 15px;
-  font-size: 24px;
+  font-size: var(--section-headings);
 }
 
 .content-block p {
   margin-bottom: 15px;
-  font-size: 16px;
+  font-size: var(--section-content);
 }
+
+.content-block .sub-heading{
+  font-size: var(--section-subheadings);
+}
+
+/* bullet points in simple circles */
+/* .content-block .list-items{
+  list-style: disc;
+  padding-left: 1.5em;
+  margin: 1em 0;
+  color: #1B365D;
+}
+
+.content-block .list-items li{
+  margin-bottom: 0.5em;
+} */
+
+/* custom bullet points */
+.content-block .list-items {
+  list-style: none;
+  padding-left: 1.5em;
+  color: #123E7C;
+}
+
+.content-block .list-items li{
+  position: relative;
+  margin-bottom: 0.5em;
+  padding-left: 1.2em;
+  font-size: var(--section-content);
+}
+
+.content-block .list-items li::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 0.6em;
+  height: 0.6em;
+  background-color: #123E7C;
+  border-radius: 2px;
+}
+
+
 /********** Other section Ends **********/
 
 /********** Footer **********/

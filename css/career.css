@@ -7,7 +7,7 @@
   justify-content: space-between;
   padding: 40px; 
   gap: 100px;
-  flex-wrap: wrap; /* makes it responsive */
+  flex-wrap: wrap; 
 }
 
 .careers-section .text-content {
@@ -15,14 +15,19 @@
   min-width: 280px;
 }
 
-.careers-section .text-content p{
-  text-align: justify;
-}
-
 .careers-section .head{
   color: #1B365D;
   padding-bottom: 10px;
-  font-size: 30px;
+  font-size: var(--section-headings);
+}
+
+.careers-section .sub-heading{
+  font-size: var(--section-subheadings);
+}
+
+.careers-section .text-content p{
+  text-align: justify;
+  font-size: var(--section-content);
 }
 
 .careers-section .image-content {
@@ -41,7 +46,6 @@
   position: relative;
   top: 86px; 
   padding: 30px 20px;
-  /* background: #fff; */
   background: #1B365D;
   font-family: 'Segoe UI', sans-serif;
   display: flex;
@@ -53,16 +57,8 @@
 
 .hiring-section h2{
   padding: 10px;
-  font-size: 30px;
-  /* color: #1B365D; */
   color: #fff;
-}
-
-.hiring-section h4 {
-  font-size: 14px;
-  color: #d2d0d0;
-  max-width: 800px;
-  margin: 0 auto;
+    font-size: var(--section-headings);
 }
 
 .hiring-section .container {
@@ -110,13 +106,25 @@
 }
 
 .hiring-section .content h3{
-  font-size: 20px;
+  font-size: var(--section-subheadings);
   margin-bottom: 10px;
 }
 
-.hiring-section .content p{
-  font-size: 18px;
+.hiring-section .how-to-apply{
+  padding: 20px;
+  margin: 10px;
 }
+
+.hiring-section .how-to-apply h4{
+  font-size: var(--section-main-content);
+  color: #fff;
+}
+
+.hiring-section .how-to-apply h5{
+  font-size: var(--section-content);
+  color: #fff;
+}
+
 
 @media screen and (max-width: 992px) {
   .hiring-section .card{
@@ -153,211 +161,6 @@
     max-width: 300px;
     height: 200px;
   }
-}
-
-/* How to Apply section */
-.how-to-apply
-{   
-    position: relative;
-    top: 85px;
-    width: 100%;
-    padding: 60px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.how-to-apply .steps{
-    width: 60%;
-    max-width: 900px;
-    padding: 20px;
-    text-align: center;
-}
-
-.how-to-apply h2{
-    padding: 10px;
-    font-size: 30px;
-    color: #1B365D;
-}
-
-.how-to-apply ul{
-    list-style: none;
-    padding: 10px 0;
-    width: 100%;
-}
-
-.how-to-apply li{
-    padding: 12px 20px;
-    font-size: 18px;
-    color: #333;
-    text-align: left;
-}
-
-@media screen and (max-width: 768px) {
-    .how-to-apply h2{
-        font-size: 24px;
-    }
-
-    .how-to-apply .steps{
-        padding: 10px;
-    }
-
-    .how-to-apply li{
-        font-size: 16px;
-        padding: 10px 15px;
-    }
-}
-
-@media (max-width: 480px){
-    .how-to-apply h2{
-        font-size: 22px;
-    }
-
-    .how-to-apply li{
-        font-size: 15px;
-        padding: 8px 10px;
-    }
-    
-}
-
-/* Why Join Us Section */
-.why-join-us-section {
-  position: relative;
-  top: 86px;
-  padding: 60px 20px;
-  background: #f8f9fa;
-  font-family: 'Segoe UI', sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #333;
-  line-height: 1.8;
-}
-
-/*  */
-
-.why-join-us-section .content-block {
-  max-width: 1050px;
-  margin: 0 auto 50px auto;
-  padding: 30px;
-  background: #fff;
-  border-left: 5px solid #1B365D;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
-
-.why-join-us-section h2{
-  padding: 10px;
-  color: #1B365D;
-  margin-bottom: 15px;
-  font-size: 24px;
-}
-
-.why-join-us-section .container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 60px;
-  margin-top: 40px;
-}
-
-.why-join-us-section .card {
-  background: transparent;
-  width: 320px;
-  height: 320px;
-  perspective: 1000px;
-  cursor: pointer;
-  flex-shrink: 0;
-}
-
-.why-join-us-section .card-box {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-.why-join-us-section .content{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 14px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-  backface-visibility: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 30px;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-.why-join-us-section .content {
-  background-color: #fff;
-  color: #003366;
-}
-
-.why-join-us-section .content h3,
-.why-join-us-section .content p
-{
-  padding: 10px;
-  margin: 10px;
-}
-
-.why-join-us-section .content h3{
-  font-size: 20px;
-}
-
-.why-join-us-section .content p{
-  font-size: 18px;
-}
-
-@media screen and (max-width: 480px) {
-  .why-join-us-section .container{
-    gap: 100px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .why-join-us-section .card{
-    width: 90%;
-    max-width: 360px;
-  }
-}
-
-/********** Consulting Division Section**********/
-.consulting-section {
-  position: relative;
-  top: 87px;
-  background-color: #f8f9fa;
-  padding: 60px 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
-  line-height: 1.8;
-}
-
-.consulting-section .content-block {
-  max-width: 838px;
-  margin: 0 auto 50px auto;
-  padding: 30px;
-  background: #fff;
-  border-left: 5px solid #1B365D;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
-
-.consulting-section .content-block h2 {
-  color: #1B365D;
-  margin-bottom: 15px;
-  font-size: 24px;
-}
-
-.consulting-section .content-block p {
-  margin-bottom: 15px;
-  font-size: 16px;
 }
 
 /* Footer */

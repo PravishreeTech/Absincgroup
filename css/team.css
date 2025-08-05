@@ -15,14 +15,19 @@
   min-width: 280px;
 }
 
-.head{
+.text-content .head{
   color: #1B365D;
   padding-bottom: 10px;
-  font-size: 30px;
+  font-size: var(--section-headings);
+}
+
+.text-content .sub-heading{
+  font-size: var(--section-subheadings);
 }
 
 .text-content p{
   text-align: justify;
+  font-size: var(--section-content);
 }
 
 .image-content {
@@ -52,14 +57,14 @@
 }
 
 .leadership-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: white; /* deep blue */
+  font-size: var(--section-headings);
   font-weight: 600;
+  color: white;
+  margin-bottom: 20px;
 }
 
 .leadership-section p {
-  font-size: 1.1rem;
+  font-size: var(--section-content);
   line-height: 1.7;
   color: white;
   text-align: justify;
@@ -69,11 +74,103 @@
   text-align: center;
 }
 
-/* Insights Section */
+/* Teams Section */
 .insights-section {
     position: relative;
     top: 85px;
     padding: 3rem 1.5rem;
+}
+
+.insights-section .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.insights-section .stats-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.insights-section .stats-header h3 {
+    font-size: var(--section-headings);
+    font-weight: 700;
+    color: #1B365D;
+}
+
+.insights-section .insights-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.insights-section .insight-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.insights-section .insight-card:hover {
+    transform: translateY(-10px);
+}
+
+.insights-section .card-content {
+    padding: 2rem;
+}
+
+.insights-section .card-content .name {
+    font-size: var(--section-subheadings);
+    font-weight: 700;
+    color: #1B365D;
+    margin-bottom: 1rem;
+}
+
+.insights-section .card-content .designation{
+  font-size: var(--section-main-content);
+}
+
+/* custom bullet points */
+.insights-section .list-items {
+  list-style: none;
+  padding-left: 1.5em;
+  color: #123E7C;
+}
+
+.insights-section .list-items li{
+  position: relative;
+  margin-bottom: 0.5em;
+  padding-left: 1.2em;
+  font-size: var(--section-content);
+}
+
+.insights-section .list-items li::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 0.6em;
+  height: 0.6em;
+  background-color: #123E7C;
+  border-radius: 2px;
+}
+
+/* not in use */
+.teams-section .card-content p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+/* not in use */
+
+@media(max-width: 800px){
+  .insights-section .insights-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
 }
 
 /* Footer */

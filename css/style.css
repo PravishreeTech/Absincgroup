@@ -25,6 +25,26 @@ body {
     width: 100%;
 }
 
+a{
+    text-decoration: none;
+}
+
+:root{
+    --navbar-elements-size: 18px;
+    --navbar-social-icons: 20px;
+    --banner-heading: 32px;
+    --banner-subheading: 24px;
+    --section-headings: 30px;
+    --section-subheadings: 25px;
+    --section-main-content: 20px;
+    --section-content: 18px;
+    --section-normal: 16px;
+    --footer-elements: 16px;
+    --footer-social-icons: 18px;
+    --copyright-section: 16
+    px;
+}
+
 /************** Header Section Starts ************/
 .header {
     position: fixed;
@@ -109,7 +129,7 @@ body {
 .header .nav-link {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: var(--navbar-elements-size);
     font-weight: 500;
     padding: 0.75rem 0.5rem;
     transition: color 0.3s ease;
@@ -141,7 +161,7 @@ body {
 .header .social-media-icons .social-link {
     width: 25px;
     height: 25px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(168, 120, 120, 0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -232,7 +252,7 @@ body {
 .hero-section {
     position: relative;
     top: 85px;
-    min-height: 500px;
+    min-height: 450px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -300,7 +320,7 @@ body {
 }
 
 .hero-section .hero-title {
-    font-size: 30px;
+    font-size: var(--banner-heading);
     font-weight: 700;
     line-height: 1.2;
     padding-top: 50px;
@@ -310,7 +330,8 @@ body {
 }
 
 .hero-section .hero-description {
-    font-size: 20px;
+    font-size: var(--banner-subheading);
+    font-weight: 500;
     line-height: 1.6;
     margin-bottom: 2rem;
     opacity: 0.9;
@@ -494,7 +515,7 @@ body {
 }
 
 .fifty-fifty-section .content-right h3 {
-    font-size: 2.25rem;
+    font-size: var(--section-headings);
     font-weight: 700;
     color: #1B365D;
     line-height: 1.3;
@@ -502,9 +523,10 @@ body {
 }
 
 .fifty-fifty-section .content-right p {
-    font-size: 1.125rem;
+    font-size: var(--section-content);
+    font-weight: 450;
     line-height: 1.6;
-    color: #666;
+    color: #1e1d1d;
     margin-bottom: 1.5rem;
 }
 
@@ -620,7 +642,7 @@ body {
 
 .video-section .video-eyebrow {
     color: #0C7BC0;
-    font-size: 0.875rem;
+    font-size: var(--section-headings);
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -629,7 +651,7 @@ body {
 
 .video-section .video-heading {
     color: white;
-    font-size: 3rem;
+    font-size: var(--section-subheadings);
     font-weight: 700;
     margin-bottom: 1rem;
 }
@@ -657,7 +679,7 @@ body {
     cursor: pointer;
 }
 
-.video-section .video-placeholder img {
+.video-section .video-placeholder video {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -676,8 +698,14 @@ body {
     align-items: center;
     justify-content: center;
     color: white;
+    z-index: 2;
     font-size: 1.5rem;
     transition: all 0.3s ease;
+}
+
+.video-section .play-button i{
+    color: #fff;
+    font-size: 28px;
 }
 
 .video-section .play-button:hover {
@@ -714,13 +742,14 @@ body {
 .solutions-tab-section .tab-btn {
     background: none;
     border: none;
-    color: rgba(255, 255, 255, 0.7);
+    color: #fff;
     padding: 1rem 1.5rem;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
     white-space: nowrap;
-    font-weight: 500;
+    font-size: var(--section-headings);
+    font-weight: 600;
 }
 
 .solutions-tab-section .tab-btn:hover {
@@ -750,8 +779,8 @@ body {
 
 .solutions-tab-section .toggle-btn {
   padding: 0.8rem 1rem;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: var(--section-main-content);
+  font-weight: 300;
   background-color: #1B365D;
   color: white;
   border: none;
@@ -772,6 +801,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 300px;
+  font-size: var(--section-content);
 }
 
 .solutions-tab-section .toggle-content img {
@@ -814,19 +844,17 @@ body {
 /*********** Solutions Tab Section Ends *************/
 
 /*********** What Sets Apart Section Starts *************/
-.why-join-us-section h2,
-.why-join-us-section h6{
+.what-sets-apart-section{
+    position: relative;
+    top: 172px;
+}
+
+.what-sets-apart-section h2{
     text-align: center;
-}
-
-.why-join-us-section h6{
-    margin: 10px;
-    font-size: 13px;
-}
-
-.why-join-us-section h4{
     color: #1B365D;
+    font-size: var(--section-headings);
 }
+
 
 /*********** What Sets Apart Section Ends *************/
 
@@ -864,36 +892,22 @@ body {
     display: flex;
 }
 
-.testimonial-section .testimonial img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
-}
-
-.testimonial-section .testimonial p {
-    font-size: 20px;
+.testimonial-section .testimonial .quote {
+    font-size: var(--section-content);
     color: #000;
     line-height: 1.6;
     margin-bottom: 10px;
 }
 
-.testimonial-section .testimonial .quote {
-    color: #0056cc;
-    font-size: 18px;
-    margin: 10px 0;
-}
-
 .testimonial-section .testimonial .name {
-    font-weight: bold;
     color: #000;
-    font-size: 20px;
+    font-size: var(--section-content);
+    font-weight: bold;
 }
 
 .testimonial-section .testimonial .role {
     font-size: 18px;
+    font-size: var(--section-content);
     color: #555;
 }
 
@@ -923,21 +937,30 @@ body {
     padding: 4rem 1.5rem;
 }
 
+.teams-section .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .teams-section .stats-header {
     text-align: center;
     margin-bottom: 3rem;
 }
 
 .teams-section .stats-header h3 {
-    font-size: 2.5rem;
+    font-size: var(--section-headings);
     font-weight: 700;
     color: #1B365D;
 }
 
 .teams-section .insights-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+    margin: 10px;
+    margin-bottom: 30px;
 }
 
 .teams-section .insight-card {
@@ -946,38 +969,82 @@ body {
     overflow: hidden;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    height: 420px;
+    width: 310px;
 }
 
 .teams-section .insight-card:hover {
     transform: translateY(-10px);
 }
 
-.teams-section .insight-card.large .card-image {
-    height: 350px;
-}
-
-.teams-section .card-image {
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
 .teams-section .card-content {
     padding: 2rem;
 }
 
-.teams-section .card-content h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
+.teams-section .card-content .name {
+    font-size: var(--section-subheadings);
+    font-weight: 600;
     color: #1B365D;
     margin-bottom: 1rem;
 }
 
-.teams-section .card-content p {
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
+.teams-section .card-content .designation{
+    font-size: var(--section-content);
+    font-weight: 550;
+    color: #000;
 }
+
+.teams-section .card-content .description{
+    font-size: var(--section-normal);
+    font-weight: 450;
+    color: #000;
+}
+
+.teams-section .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #0C7BC0 0%, #1B365D 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.teams-section .cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(12, 123, 192, 0.3);
+}
+
+.teams-section .cta-btn .tile {
+    position: relative;
+    z-index: 2;
+}
+
+@media screen and (max-width: 1200px) {
+    .teams-section .insights-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .teams-section .insights-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .teams-section .insights-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 /*********** Team Section Ends *************/
 
 /*********** Contact Section Starts *************/
@@ -1001,13 +1068,6 @@ body {
 }
 
 .contact-section .contact-info {
-    /* width: 60%;
-    height: 60%;
-    min-height: 400px;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-
     display: flex;
     flex-direction: column;
     background-color: #1B365D;
@@ -1023,15 +1083,6 @@ body {
 }
 
 .contact-section .contact-info .box .icon{
-    /* min-width: 60px;
-    height: 60px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-size: 22px; */
-
     width: 50px;
     height: 50px;
     background: #fff;
@@ -1046,7 +1097,7 @@ body {
 .contact-section .contact-info .box .text{
     display: flex;
     margin-left: 20px;
-    font-size: 15px;
+    font-size: var(--section-content);
     color: #fff;
     flex-direction: column;
     font-weight: 500;
@@ -1067,9 +1118,8 @@ body {
 }
 
 .contact-section .form-container h2 {
-    /* margin-bottom: 20px; */
     color: #1B365D;
-    font-size: 24px;
+    font-size: var(--section-headings);
     text-align: center;
 }
 
@@ -1081,7 +1131,7 @@ body {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 6px;
-    font-size: 15px;
+    font-size: var(--section-content);
 }
 
 .contact-section .form-container .row{
@@ -1101,7 +1151,7 @@ body {
     color: white;
     border: none;
     border-radius: 6px;
-    font-size: 16px;
+    font-size: var(--section-subheadings);
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -1130,22 +1180,13 @@ body {
 }
 /*********** Contact Section Ends *************/
 
-
-/*********** Careers Section Starts (still not confirmed) ***********/
-.careers-section {
-    position: relative;
-    top: 140px;
-    padding: 4rem 0;
-    background: #f8f9fa;
-    /* border: 5px solid red; */
-}
-/*********** Careers Section Ends (still not confirmed) ***********/
-
 /*********** Footer Section Starts ***********/
 .footer {
     position: relative;
     top: 140px;
     background: #1B365D;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .footer-main {
@@ -1161,15 +1202,12 @@ body {
     flex-wrap: wrap;
 }
 
-.footer-copyright {
-    font-size: 0.875rem;
-    color: #fff;
-}
-
+/* Links Columns */
 .footer-links {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    min-width: 280px;
 }
 
 .footer-links-row {
@@ -1181,14 +1219,33 @@ body {
 .footer-links a {
     color: #fff;
     text-decoration: none;
-    font-size: 0.875rem;
+    font-size: var(--footer-elements);
     transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-    color: #0056cc;
+    color: #0C7BC0;
+    text-decoration: underline;
 }
 
+/* Contact Info */
+.footer-contact {
+    min-width: 280px;
+    font-size: var(--footer-elements);
+    line-height: 1.6;
+}
+
+.footer-contact a {
+    color: #fff;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+    color: #0C7BC0;
+}
+
+/* Footer Bottom Section */
 .footer-bottom {
     padding: 2rem 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -1207,31 +1264,27 @@ body {
     width: auto;
 }
 
-.footer-logo a{
+.footer-logo a {
     text-decoration: none;
-    font-size: 30px;
-    /* color: #000; */
 }
 
 .footer-copyright-extended {
     flex: 1;
     text-align: center;
-}
-
-.footer-copyright-extended p {
-    font-size: 0.75rem;
-    color: rgba(192, 187, 187, 0.7);
+    font-size: var(--copyright-section);
+    color: white;
     line-height: 1.5;
 }
 
+/* Social Icons */
 .footer-social {
     display: flex;
     gap: 1rem;
 }
 
 .footer .social-link {
-    width: 25px;
-    height: 25px;
+    width: 36px;
+    height: 36px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     display: flex;
@@ -1239,10 +1292,10 @@ body {
     justify-content: center;
     text-decoration: none;
     transition: all 0.3s ease;
-    padding: 18px;
+    font-size: var(--footer-social-icons);
 }
 
-.footer .social-link i{
+.footer .social-link i {
     color: #fff;
 }
 
@@ -1251,31 +1304,66 @@ body {
     transform: translateY(-2px);
 }
 
-.footer .social-link i:hover {
-    color: #fff;
+/* Developer Credit */
+.footer .final-copyright {
+    padding: 10px 0;
+    background-color: #123E7C;
 }
 
-.footer .final-copyright{
-    padding: 10px;
-}
-
-.footer .final-copyright a{
+.footer .final-copyright a {
     text-decoration: none;
 }
 
-.footer .final-copyright p{
-    width: 100%; 
-    text-align: center; 
-    color: #fff; 
-    font-size: 18px;
+.footer .final-copyright p {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: var(--copyright-section);
+    margin: 0;
 }
 
-
-@media screen and (max-width: 700px) {
-    .footer-main{
-        padding: 3rem;
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-links {
+        flex-direction: row;
+        justify-content: center;
+        gap: 3rem;
+        margin-bottom: 1.5rem;
+    }
+    .footer-links-row {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .footer-contact {
+        margin-bottom: 2rem;
+    }
+    .footer-bottom-content {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .footer-logo {
+        margin-bottom: 0.5rem;
+    }
+    .footer-social {
+        justify-content: center;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .footer-links-row {
+        gap: 1rem;
+    }
+}
+
 /*********** Footer Section Ends ***********/
 
 /*********** Back to Top Button Starts ***********/
@@ -1398,10 +1486,6 @@ body {
     .jump-menu {
         flex-wrap: wrap;
         gap: 1rem;
-    }
-
-    .teams-section .insights-grid {
-        grid-template-columns: repeat(1, 1fr);
     }
 
     .footer-content {
