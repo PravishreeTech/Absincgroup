@@ -15,6 +15,10 @@
   min-width: 280px;
 }
 
+.careers-section .text-content p{
+  text-align: justify;
+}
+
 .careers-section .head{
   color: #1B365D;
   padding-bottom: 10px;
@@ -35,7 +39,7 @@
 /* Hiring Roles Section */
 .hiring-section {
   position: relative;
-  top: 86px;
+  top: 86px; 
   padding: 30px 20px;
   /* background: #fff; */
   background: #1B365D;
@@ -186,6 +190,7 @@
     padding: 12px 20px;
     font-size: 18px;
     color: #333;
+    text-align: left;
 }
 
 @media screen and (max-width: 768px) {
@@ -219,19 +224,34 @@
 .why-join-us-section {
   position: relative;
   top: 86px;
-  padding: 30px 20px;
-  background: #fff;
+  padding: 60px 20px;
+  background: #f8f9fa;
   font-family: 'Segoe UI', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #333;
+  line-height: 1.8;
+}
+
+/*  */
+
+.why-join-us-section .content-block {
+  max-width: 1050px;
+  margin: 0 auto 50px auto;
+  padding: 30px;
+  background: #fff;
+  border-left: 5px solid #1B365D;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .why-join-us-section h2{
   padding: 10px;
-  font-size: 30px;
   color: #1B365D;
+  margin-bottom: 15px;
+  font-size: 24px;
 }
 
 .why-join-us-section .container {
@@ -320,7 +340,7 @@
 }
 
 .consulting-section .content-block {
-  max-width: 1050px;
+  max-width: 838px;
   margin: 0 auto 50px auto;
   padding: 30px;
   background: #fff;

@@ -21,6 +21,10 @@
   font-size: 30px;
 }
 
+.text-content p{
+  text-align: justify;
+}
+
 .image-content {
   flex: 1;
   min-width: 280px;
@@ -58,6 +62,11 @@
   font-size: 1.1rem;
   line-height: 1.7;
   color: white;
+  text-align: justify;
+}
+
+.leadership-section .main-point{
+  text-align: center;
 }
 
 /* Insights Section */
